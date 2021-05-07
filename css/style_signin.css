@@ -1,0 +1,35 @@
+body {
+  background-color: #8dc740; /* style.css 파일을 관련 css 링크 중 가장 마지막에 둬야 덮어 씌워지지 않음*/
+  text-align: center;
+}
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: white;
+  text-decoration: none;
+  /* 링크 아이콘 색깔 변하지 않도록 */
+}
+
+#title {
+  font-size: 45px;
+  color: white;
+}
+
+#ID_input,
+#PW_input {
+  margin: 7px auto;
+  width: 300px;
+}
+
+.btn {
+  width: 300px;
+  margin: 3px auto;
+  background-color: #072a60;
+  color: white;
+}
+:hover.btn {
+  /* 마우스 커서 올릴 때 text 색 변하지 않도록*/
+  color: white;
+}
