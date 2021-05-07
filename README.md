@@ -21,3 +21,17 @@
   - main.html : 디자인, signin page 연결 - 80%
   - signin.html : 디자인, main, signup page 연결 - 90%
   - Screenshot : /image/screenshot_main.png, screenshot_signin.png
+
+21/05/08 - 김민수
+
+- TODO :
+  - main.html : 카테고리 링크 연결
+  - sign.html : 입력값 다루기
+  - signup.html : 입력값 다루기
+  - personalInfo.html : 디자인 변경
+- 진행 :
+  - signup.html : 디자인, main page 연결
+  - personalInfo.html : signup page에 기초한 디자인
+  - Screenshot :
+    - /image/screenshot_signup.png, screenshot_Info.png
+    - /image/screenshot_main.png 변경
