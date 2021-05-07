@@ -9,7 +9,6 @@
 | E-mail     | jisu7935@g.skku.edu | rbals0445@naver.com | kms78900@naver.com |
 
 ## Development History
-
 21/05/07 - 김민수
 
 - TODO : 폰트 및 사이즈, 화면 크기(전체 or 일부) 등
@@ -35,3 +34,10 @@
   - Screenshot :
     - /image/screenshot_signup.png, screenshot_Info.png
     - /image/screenshot_main.png 변경
+
+21/05/08 - 한규민
+- 변경사항 :
+  - main.html : 메인버튼 클릭 범위 수정 (Width 전체 -> 텍스트 범위에만 맞게)
+  - signin.html : ditto
+  - signup.html : ditto
+  - personalinfo.html : ditto
