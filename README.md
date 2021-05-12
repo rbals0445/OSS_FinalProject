@@ -41,3 +41,22 @@
   - signin.html : ditto
   - signup.html : ditto
   - personalinfo.html : ditto
+
+21/05/12 - 김지수
+
+- TODO :
+  - category.html : 카테고리별 페이지 타이틀 및 목록 변경
+  - moreinfo.html : DB 연결
+  - mypage.html : 회원정보 DB 연결
+  - image :
+    - category_img : DB 연결
+    - profile_img : DB 연결
+- 진행 :
+  - category.html : 디자인
+  - moreinfo.html : 디자인
+  - mypage.html : 디자인
+  - image :
+    - category_img
+    - profile_img
+- 변경사항 :
+  main.html : 카테고리 버튼 클릭 시 category.html 연결
