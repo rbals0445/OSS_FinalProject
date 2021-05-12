@@ -1,0 +1,42 @@
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: #072a60;
+  text-decoration: none;
+  /* 링크 아이콘 색깔 변하지 않도록 */
+}
+
+
+#main_icon {
+    float: right;
+    font-size: 30px;    
+}
+
+#category_icon {
+    font-size: 40px;   
+}
+
+#category_title {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color:#8dc740;  
+}
+
+#score{
+    text-align: right;
+}
+
+.card{
+    border:none;
+}
+
+.card-title{
+    font-size:18px;
+}
+
+.card-text{
+    font-size:12px;    
+}
+
+
