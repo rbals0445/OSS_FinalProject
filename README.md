@@ -43,7 +43,6 @@
   - personalinfo.html : ditto
 
 21/05/12 - 김지수 
-
 - TODO : 
   - category.html : 카테고리별 페이지 타이틀 및 목록 변경
   - moreinfo.html : 해당 
@@ -51,7 +50,6 @@
   - image : 
     - category_img : DB 연결
     - profile_img : DB 연결
-
 - 진행 : 
   - category.html : 디자인  
   - moreinfo.html : 디자인
