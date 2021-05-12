@@ -1,0 +1,66 @@
+body {
+     /* style.css 파일을 관련 css 링크 중 가장 마지막에 둬야 덮어 씌워지지 않음*/
+    text-align: center;
+}
+
+
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: #072a60;
+  text-decoration: none;
+  /* 링크 아이콘 색깔 변하지 않도록 */
+}
+
+.container{
+    overflow: hidden;
+}
+
+#main_icon {
+    float: right;
+    font-size: 30px;    
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.image{
+    float:left;
+    margin-left: 300px;
+     
+}
+
+#img{
+    width:400px;
+    border-radius:7px;
+}
+
+.info{
+    float:left;
+    padding-left: 30px;
+}
+
+.button{
+    background-color: white;
+    border:0;
+    outline: 0;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+
+th {
+    text-align: left;    
+}
+
+td {
+    text-align: left;    
+}
+
+#title{
+    font-size:30px;
+    font-weight: bold;    
+}
+
+

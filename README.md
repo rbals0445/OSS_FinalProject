@@ -41,3 +41,33 @@
   - signin.html : ditto
   - signup.html : ditto
   - personalinfo.html : ditto
+
+21/05/12 - 김지수
+
+- TODO :
+  - category.html : 카테고리별 페이지 타이틀 및 목록 변경
+  - moreinfo.html : DB 연결
+  - mypage.html : 회원정보 DB 연결
+  - image :
+    - category_img : DB 연결
+    - profile_img : DB 연결
+- 진행 :
+  - category.html : 디자인
+  - moreinfo.html : 디자인
+  - mypage.html : 디자인
+  - image :
+    - category_img
+    - profile_img
+- 변경사항 :
+  - main.html : 카테고리 버튼 클릭 시 category.html 연결
+
+21/05/13 - 한규민
+
+- TODO :
+  - 페이지별 DB설계 및 실제 연동
+  - Express 사용으로 인한 초반 아키텍처의 변경 필요 (express-generator에 맞게 구조 변환 필요)
+- 진행 :
+  - Express 사용 및 express-generator로 프레임워크 제공 structure 사용
+  - SKKU MEAL의 몇가지 페이지를 Express structure에 연동해보고 결과 확인
+  - DB(Mysql) 연동 시도 및 성공 (카카오톡방에 사진 첨부)
+  
