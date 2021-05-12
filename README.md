@@ -59,4 +59,4 @@
     - category_img
     - profile_img
 - 변경사항 :
-  main.html : 카테고리 버튼 클릭 시 category.html 연결
+  - main.html : 카테고리 버튼 클릭 시 category.html 연결
