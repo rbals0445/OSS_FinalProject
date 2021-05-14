@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <table border='1'>
+      <tr>
+        <th>ID</th>
+        <th>PWD</th>
+        <th>Name</th>
+        <th>TYPE</th>
+      </tr>
+      <% rows.forEach( (row,index)=>{ %>
+        <tr>
+          <td><%= row.ID%></td>
+          <td><%= row.PWD%></td>
+          <td><%= row.NAME%></td>
+          <td><%= row.TYPE%></td>
+        </tr>
+      <% } ) %>
+    </table>
+    
+    <div class="container">
+      <a id="goto_signin" href="/signin">
+        <i class="bi bi-person-fill" id="person_icon"></i>
+      </a>
+      <p></p>
+      
+      
+      <h1>
+        <a href="/">
+          <span id="title"><br />S K K U<br />M E A L</span>
+        </a>
+      </h1>
+      <!-- Why Span? Not div
+      Span은 텍스트 사이즈에 맞춰서 공간을 할당해주고, Div는 width 전체를 감싸게됨.
+      Div로 바꾸고나서 클릭해보면 이전과 같은 현상이 나타남. 
+      
+      -->
+      
+
+      <p></p>
+      <div class="icon_link">
+        <!-- 카테고리 이동 아이콘 링크 -->
+        <!-- 추후 아이콘 변경할 것 -->
+        <a href="/category">🍽</a>
+        <span>　</span>
+        <a href="/category">☕</a>
+        <span>　</span>
+        <a href="/category">🍻</i></a>
+        <span>　</span>
+        <a href=""><i class="bi bi-plus"></i></a>
+      </div>
+      <p><br /></p>
+      <div
+        class="search d-flex mb-3 justify-content-center"
+        style="width: 730px"
+      >
+      <!-- TODO : 돋보기 아이콘 검색 활성화 시 안보이도록 -->
+        <label for="search_input" style="margin-top: 10px;">
+          <i class="bi bi-search" style="margin: 10px;"></i>
+        </label>
+        <input
+          type="text"
+          class="form-control"
+          id="search_input"
+          placeholder=""
+        />
+        <button type="button" class="btn">SEARCH</button>
+      </div>
+    </div>
+  </body>
+</html>

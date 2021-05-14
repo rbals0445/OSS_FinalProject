@@ -1,0 +1,58 @@
+body {
+  background-color: #8dc740; /* style.css 파일을 관련 css 링크 중 가장 마지막에 둬야 덮어 씌워지지 않음*/
+  text-align: center;
+}
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: #072a60;
+  text-decoration: none;
+  /* 링크 아이콘 색깔 변하지 않도록 */
+}
+#person_icon {
+  float: right;
+  font-size: 45px;
+}
+
+#title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  color: white;
+}
+
+.icon_link {
+  /* 카테고리 이동 icon */
+  font-size: 40px;
+}
+
+.search {
+  background-color: white;
+  position: relative;
+  border-radius: 14px;
+  outline: none;
+  margin: 7px auto;
+  margin: 0 auto;
+}
+
+#search_input {
+  border: none;
+  border-radius: 14px;
+  width: 590px;
+}
+
+.btn {
+  border-radius: 14px;
+  width: 95px;
+
+  margin: 5px;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #072a60;
+  color: white;
+}
+:hover.btn {
+  /* 마우스 커서 올릴 때 text 색 변하지 않도록*/
+  color: white;
+}
