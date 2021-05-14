@@ -70,4 +70,15 @@
   - Express 사용 및 express-generator로 프레임워크 제공 structure 사용
   - SKKU MEAL의 몇가지 페이지를 Express structure에 연동해보고 결과 확인
   - DB(Mysql) 연동 시도 및 성공 (카카오톡방에 사진 첨부)
+
+21/05/14 - 한규민
+- 변경사항 :
+  - npm install express --save 로 express 설치 후 ./Mypage에서 npm start로 실행 가능
+  - 주소는 localhost:7777
+  - Express Structure로 변경
+  - Description : 
+    - ./views : .html 폴더 
+    - ./public : css,js,image 폴더
+    - ./routes : client의 요청에 응답하여 page나 정보를 바꿔주는 폴더
+    - db.js : DB내용이라 .gitignore에 추가했음. 카카오톡으로 요청 가능
   
