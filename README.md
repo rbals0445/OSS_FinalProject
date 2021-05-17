@@ -90,5 +90,15 @@
   - client에서 validation check, server에서는 db와 값 체크 후 response
   - 학습 내용 https://blog.naver.com/rbals0445 에 기록.
 
-  
-  
+21/05/18 - 한규민
+  - 변경사항 :
+    - Register,login 기능 구현
+    - Update 기능 구현
+    - page 이동시에 사용자 정보 담아서 이동하는것 구현
+    - personalInfo.ejs : password input type="password"로 변경, disabled 속성 추가
+  - TODO :
+    - moreinfo 구현 필요
+    - 좋아요,싫어요,찜목록 구현
+    - 사진 저장기능 구현
+    - 메인에서 검색기능 구현
+    - 카테고리 img 클릭 시 이미지 나오게 구현 필요

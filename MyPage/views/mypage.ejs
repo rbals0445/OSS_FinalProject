@@ -23,13 +23,13 @@
             </div>
 
             <div class="page_link">
-                <p><a href="/" id="main_link">S K K U<br>M E A L</a></p>
+                <p><a onclick="mainpage()" id="main_link">S K K U<br>M E A L</a></p>
                 <p><a href="/" id="link">LOG OUT<br></a></p>
-                <p><a href="/personalInfo" id="link">MODIFY INFO<br></a></p>               
+                <p><a onclick="modifyinfo()" id="link">MODIFY INFO<br></a></p>               
             </div>
         </div>
 
-        <p id="pick_title">NICKNAME PICK</p>
+        <p id="pick_title"><%= id%>`s PICK</p>
         
         <div class="content">
             <div class="row">
@@ -89,6 +89,6 @@
         </div>
 
        
-
+        <script type="text/javascript" src="./../javascripts/mypage.js"></script>
     </body>
 </html>

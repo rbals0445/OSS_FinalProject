@@ -3,8 +3,8 @@ body {
 }
 
 a:link,
-a:hover,
 a:visited,
+a:hover,
 a:active {
   color: #8dc740;
   text-decoration: none;
@@ -31,6 +31,8 @@ label {
   line-height: 40px; /*input's height 30 + margin of two input 5 * 2 = 40*/
 }
 
+#RPW_input,
+#ID_input,
 #NAME_input,
 #BIRTH_input,
 #PW_input,
@@ -43,8 +45,8 @@ label {
   margin-right: 70px;
   float: right;
 }
-#ID_input,
-#RPW_input {
+/* ,
+ {
   width: 255px;
   height: 30px;
   margin-top: 5px;
@@ -52,7 +54,7 @@ label {
   margin-left: auto;
   margin-right: 5px;
   float: right;
-}
+} */
 .form-check-input {
   font-size: 25px;
   margin-right: 70px;

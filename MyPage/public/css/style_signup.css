@@ -30,7 +30,8 @@ label {
   color: gray;
   line-height: 40px; /*input's height 30 + margin of two input 5 * 2 = 40*/
 }
-
+#ID_input,
+#RPW_input,
 #NAME_input,
 #BIRTH_input,
 #PW_input,
@@ -43,8 +44,8 @@ label {
   margin-right: 70px;
   float: right;
 }
-#ID_input,
-#RPW_input {
+/*
+ {
   width: 255px;
   height: 30px;
   margin-top: 5px;
@@ -52,7 +53,8 @@ label {
   margin-left: auto;
   margin-right: 5px;
   float: right;
-}
+}*/
+
 .form-check-input {
   font-size: 25px;
   margin-right: 70px;
