@@ -14,33 +14,16 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-<!--
-    <table border='1'>
-      <tr>
-        <th>ID</th>
-        <th>PWD</th>
-        <th>Name</th>
-        <th>TYPE</th>
-      </tr>
-      <% rows.forEach( (row,index)=>{ %>
-        <tr>
-          <td><%= row.ID%></td>
-          <td><%= row.PWD%></td>
-          <td><%= row.NAME%></td>
-          <td><%= row.TYPE%></td>
-        </tr>
-      <% } ) %>
-    </table>
-  -->
     <div class="container">
-      <a id="goto_signin" href="/signin">
+      
+      <a id="goto_signin" href ="javascript:mypage()">
         <i class="bi bi-person-fill" id="person_icon"></i>
       </a>
       <p></p>
       
       
       <h1>
-        <a href="/">
+        <a href ="javascript:mainpage()">
           <span id="title"><br />S K K U<br />M E A L</span>
         </a>
       </h1>
@@ -81,5 +64,6 @@
         <button type="button" class="btn">SEARCH</button>
       </div>
     </div>
+    <script type="text/javascript" src="./../javascripts/main.js"></script>
   </body>
 </html>
