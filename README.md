@@ -82,3 +82,13 @@
     - ./routes : client의 요청에 응답하여 page나 정보를 바꿔주는 폴더
     - db.js : DB내용이라 .gitignore에 추가했음. 카카오톡으로 요청 가능
   
+21/05/17 - 한규민
+- 변경사항 : 
+  - SignUp에서 입력된 데이터들 가공 및 client-server 응답 체크 (rest api 이용)
+  - DB에서 중복된 아이디 체크 후 register 가능.
+  - SignUp.ejs에서 중복 pwd체크 하는 기능 제거. (비동기처리 새로 해야해서)
+  - client에서 validation check, server에서는 db와 값 체크 후 response
+  - 학습 내용 https://blog.naver.com/rbals0445 에 기록.
+
+  
+  
