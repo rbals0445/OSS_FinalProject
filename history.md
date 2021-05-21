@@ -103,5 +103,6 @@
 21/05/21 - 김민수
   - 변경사항 :
     - README.txt 수정 - screenshot, demo video, how to use, history 메뉴 만듦
+    - data/Restaurant.txt - 음식점 추가
   - TODO :
     - screenshot 만들기, demo video 제작 후 link, how to use
