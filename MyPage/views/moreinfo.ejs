@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,49 +14,43 @@
     <link rel="stylesheet" href="css/style_moreinfo.css" />
   </head>
   <body>
+    <a id="main_icon" href="javascript:back()">🏠</a>
 
-    <a id="main_icon" href="/">🏠</a>
-    
     <h1>
-        <button class="button" type="button">👍</button>
-        <button class="button" type="button">👎</button>
-        <button class="button" type="button">❤</button>        
+      <button class="button" type="button">👍<%=result[0].like%></button>
+      <button class="button" type="button">👎<%=result[0].dislike%></button>
+      <button class="button" type="button">❤</button>
     </h1>
 
-    
-
     <div class="container">
-        
+      <div class="image">
+        <img id="img" src="<%= result[0].image %>" />
+      </div>
 
-        <div class="image">
-            <img id="img" src="images/category_img/category1.jpg"/>
-        </div>
-
-        <div class="info">
-            <table width="400" align="left">
-                <tr id="title">
-                    <td colspan="2">자명문</td>
-                </tr>
-                <tr>
-                    <td>주소</td>
-                    <td>경기도 수원시 장안구 율전로</td>
-                </tr>
-                <tr>
-                    <td>전화번호</td>
-                    <td>010-6333-6612</td>
-                </tr>
-                <tr>
-                    <td>카테고리</td>
-                    <td>카페</td>
-                </tr>
-                <tr>
-                    <td>영업시간</td>
-                    <td>11:00 ~ 22:30</td>
-                </tr>
-            </table>
-        </div>
-
+      <div class="info">
+        <table width="400" align="left">
+          <tr id="title">
+            <td colspan="2"><%=result[0].name%></td>
+          </tr>
+          <tr>
+            <td>주소</td>
+            <td><%=result[0].location%></td>
+          </tr>
+          <tr>
+            <td>전화번호</td>
+            <td><%=result[0].pn%></td>
+          </tr>
+          <tr>
+            <td>카테고리</td>
+            <td><%=result[0].category%></td>
+          </tr>
+          <tr>
+            <td>영업시간</td>
+            <td><%=result[0].oper_hour%></td>
+          </tr>
+        </table>
+      </div>
     </div>
+    <script type="text/javascript" src="./../javascripts/moreinfo.js"></script>
   </body>
 </html>
-  

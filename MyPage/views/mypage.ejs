@@ -1,94 +1,70 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
-            crossorigin="anonymous"
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style_mypage.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile">
+        <img
+          id="img"
+          src="images/profile_img/profile.png"
+          width="150"
+          heigth="150"
         />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-        />
-        <link rel="stylesheet" href="css/style_mypage.css" />
-    </head>
-    <body>
+        <p id="nickname"><%= id%></p>
+      </div>
 
-        <div class="container">
-            
-            <div class="profile">
-                    <img id="img" src="images/profile_img/profile.png" width="150" heigth="150"/>
-                    <p id="nickname">7ZXU</p>                
-            </div>
+      <div class="page_link">
+        <p>
+          <a href="javascript:mainpage()" id="main_link">S K K U<br />M E A L</a>
+        </p>
+        <p>
+          <a href="/" id="link">LOG OUT<br /></a>
+        </p>
+        <p>
+          <a href="javascript:modifyinfo()" id="link">MODIFY INFO<br /></a>
+        </p>
+      </div>
+    </div>
 
-            <div class="page_link">
-                <p><a onclick="mainpage()" id="main_link">S K K U<br>M E A L</a></p>
-                <p><a href="/" id="link">LOG OUT<br></a></p>
-                <p><a onclick="modifyinfo()" id="link">MODIFY INFO<br></a></p>               
-            </div>
+    <p id="pick_title"><%= id%>`s PICK</p>
+
+    
+      
+    </div>
+    <div class="container">
+    <div class="row">
+      <% result.forEach( (i) => {%>
+      <div class="col-3">
+        <div class="card">
+          <a href="javascript:moreinfo('<%=i.name%>')" >
+            <img src="<%=i.image %>" alt="No Img" class="card-img-top" />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">
+              <%= i.name%> 👍<%= i.like%> 👎<%=i.dislike%>
+            </h5>
+            <p class="card-text">
+              <span></span>
+              <span><%= i.location %></span>
+            </p>
+          </div>
         </div>
-
-        <p id="pick_title"><%= id%>`s PICK</p>
-        
-        <div class="content">
-            <div class="row">
-                <div class="col-3">            
-                    <div class="card">
-                            <a href='/moreinfo' target="_blank">
-                            <img src="images/category_img/category1.jpg" alt="" class="card-img-top"/>
-                            </a>                
-                        <div class="card-body">
-                            <h5 class="card-title">자명문 👍5 👎1</h5>
-                            <p class="card-text">
-                                <span></span>
-                                <span>경기도 수원시 장안구 율전동 율전로108번길 9</span>                                                    
-                            </p>
-                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3">            
-                    <div class="card">
-                            <a href='/moreinfo' target="_blank">
-                            <img src="images/category_img/category1.jpg" alt="" class="card-img-top"/>
-                            </a>                
-                        <div class="card-body">
-                            <h5 class="card-title">가게이름</h5>
-                            <p class="card-text">가게위치 </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3">            
-                    <div class="card">
-                            <a href='./moreinfo' target="_blank">
-                            <img src="images/category_img/category1.jpg" alt="" class="card-img-top"/>
-                            </a>                
-                        <div class="card-body">
-                            <h5 class="card-title">가게이름</h5>
-                            <p class="card-text">가게위치 </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3">            
-                    <div class="card">
-                            <a href='./moreinfo' target="_blank">
-                            <img src="images/category_img/category1.jpg" alt="" class="card-img-top"/>
-                            </a>                
-                        <div class="card-body">
-                            <h5 class="card-title">가게이름</h5>
-                            <p class="card-text">가게위치 </p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-
-       
-        <script type="text/javascript" src="./../javascripts/mypage.js"></script>
-    </body>
+      </div>
+      <%});%>
+    </div>
+  </div>
+    <script type="text/javascript" src="./../javascripts/mypage.js"></script>
+  </body>
 </html>
