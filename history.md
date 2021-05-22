@@ -1,6 +1,7 @@
 ## Development History
 
 21/05/07 - 김민수
+
 - TODO : 폰트 및 사이즈, 화면 크기(전체 or 일부) 등
   - main.html : 카테고리 아이콘, search input 태그 활성화 시 돋보기 아이콘 안보이도록
   - signin.html : 입력값 다루기
@@ -12,6 +13,7 @@
   - Screenshot : /image/screenshot_main.png, screenshot_signin.png
 
 21/05/08 - 김민수
+
 - TODO :
   - main.html : 카테고리 링크 연결
   - sign.html : 입력값 다루기
@@ -25,6 +27,7 @@
     - /image/screenshot_main.png 변경
 
 21/05/08 - 한규민
+
 - 변경사항 :
   - main.html : 메인버튼 클릭 범위 수정 (Width 전체 -> 텍스트 범위에만 맞게)
   - signin.html : ditto
@@ -61,18 +64,20 @@
   - DB(Mysql) 연동 시도 및 성공 (카카오톡방에 사진 첨부)
 
 21/05/14 - 한규민
+
 - 변경사항 :
   - npm install express --save 로 express 설치 후 ./Mypage에서 npm start로 실행 가능
   - 주소는 localhost:7777
   - Express Structure로 변경
-  - Description : 
-    - ./views : .html 폴더 
+  - Description :
+    - ./views : .html 폴더
     - ./public : css,js,image 폴더
     - ./routes : client의 요청에 응답하여 page나 정보를 바꿔주는 폴더
     - db.js : DB내용이라 .gitignore에 추가했음. 카카오톡으로 요청 가능
-  
+
 21/05/17 - 한규민
-- 변경사항 : 
+
+- 변경사항 :
   - SignUp에서 입력된 데이터들 가공 및 client-server 응답 체크 (rest api 이용)
   - DB에서 중복된 아이디 체크 후 register 가능.
   - SignUp.ejs에서 중복 pwd체크 하는 기능 제거. (비동기처리 새로 해야해서)
@@ -80,29 +85,45 @@
   - 학습 내용 https://blog.naver.com/rbals0445 에 기록.
 
 21/05/18 - 한규민
-  - 변경사항 :
-    - Register,login 기능 구현
-    - Update 기능 구현
-    - page 이동시에 사용자 정보 담아서 이동하는것 구현
-    - personalInfo.ejs : password input type="password"로 변경, disabled 속성 추가
-  - TODO :
-    - moreinfo 구현 필요
-    - 좋아요,싫어요,찜목록 구현
-    - 사진 저장기능 구현
-    - 메인에서 검색기능 구현
-    - 카테고리 img 클릭 시 이미지 나오게 구현 필요
-  
+
+- 변경사항 :
+  - Register,login 기능 구현
+  - Update 기능 구현
+  - page 이동시에 사용자 정보 담아서 이동하는것 구현
+  - personalInfo.ejs : password input type="password"로 변경, disabled 속성 추가
+- TODO :
+  - moreinfo 구현 필요
+  - 좋아요,싫어요,찜목록 구현
+  - 사진 저장기능 구현
+  - 메인에서 검색기능 구현
+  - 카테고리 img 클릭 시 이미지 나오게 구현 필요
+
 21/05/19 - 김민수
-  - 변경사항 :
-    - data/Restaurant.txt 추가 - 음식점 조사 목록
-  - TODO :
-    - 음식점 카테고리별 번호 부여
-    - 추가적인 음식점 목록 및 사진
-    - 음식점 목록 데이터베이스에 추가하기
+
+- 변경사항 :
+  - data/Restaurant.txt 추가 - 음식점 조사 목록
+- TODO :
+  - 음식점 카테고리별 번호 부여
+  - 추가적인 음식점 목록 및 사진
+  - 음식점 목록 데이터베이스에 추가하기
 
 21/05/21 - 김민수
-  - 변경사항 :
-    - README.txt 수정 - screenshot, demo video, how to use, history 메뉴 만듦
-    - data/Restaurant.txt - 음식점 추가
-  - TODO :
-    - screenshot 만들기, demo video 제작 후 link, how to use
+
+- 변경사항 :
+  - README.txt 수정 - screenshot, demo video, how to use, history 메뉴 만듦
+  - data/Restaurant.txt - 음식점 추가
+- TODO :
+  - screenshot 만들기, demo video 제작 후 link, how to use
+
+21/05/23 - 한규민
+
+- 변경사항 :
+  - 로그인 후 Mypage에서 찜목록 불러오기 구현
+  - moreinfo 구현
+  - 사진 저장기능 구현
+  - 메인에서 검색기능 구현
+  - 카테고리 img 클릭 시 페이지 이동 구현 (category.ejs)
+  - 여러 category 같은 페이지로 모두 재사용함(추가페이지 필요 X)
+- TODO :
+  - 좋아요, 싫어요 기능
+  - DB 값 정리 및 img 저장 필요
