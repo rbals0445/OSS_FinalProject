@@ -2,6 +2,7 @@ var express = require("express");
 const db = require("./../db.js");
 var router = express.Router();
 const mysql = require("mysql");
+const e = require("express");
 
 // TODO : DB 정보들 은닉 필요함.
 const connection = mysql.createConnection({
@@ -212,4 +213,76 @@ router.get("/moreinfo", function (req, res, next) {
   );
 });
 
+router.post("/like", (req, res, next) => {
+  connection.query(
+    "update restaurant set `like` = `like` + 1 where name = ?",
+    [req.body.name],
+    (error, results) => {
+      if (error) console.log(error);
+
+      if (results.changedRows > 0) {
+        return res.json({
+          success: true,
+        });
+      } else {
+        return res.json({
+          success: false,
+        });
+      }
+    }
+  );
+});
+
+router.post("/dislike", (req, res, next) => {
+  connection.query(
+    "select * from where id",
+    [req.body.name],
+    (error, results) => {
+      if (error) console.log(error);
+
+      if (results.changedRows > 0) {
+        return res.json({
+          success: true,
+        });
+      } else {
+        return res.json({
+          success: false,
+        });
+      }
+    }
+  );
+});
+
+router.post("/wishlist", (req, res, next) => {
+  connection.query(
+    "select * from wishlist where res_name = ? and id=?",
+    [req.body.name, req.body.id],
+    (error, results) => {
+      if (error) {
+        console.log(error);
+      }
+
+      if (results.length > 0) {
+        //찜 이미 한 경우
+        connection.query("delete from wishlist where res_name = ? and id = ?", [
+          req.body.name,
+          req.body.id,
+        ]);
+
+        return res.json({
+          success: false,
+        });
+      } else {
+        //찜 안한경우
+        connection.query("insert into wishlist values(?,?)", [
+          req.body.name,
+          req.body.id,
+        ]);
+        return res.json({
+          success: true,
+        });
+      }
+    }
+  );
+});
 module.exports = router; //router를 다시 모듈로

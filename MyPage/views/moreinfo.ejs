@@ -17,9 +17,11 @@
     <a id="main_icon" href="javascript:back()">🏠</a>
 
     <h1>
-      <button class="button" type="button">👍<%=result[0].like%></button>
-      <button class="button" type="button">👎<%=result[0].dislike%></button>
-      <button class="button" type="button">❤</button>
+      <button class="button" type="button" onclick="like()">👍</button
+      ><b id="like"><%=result[0].like%></b>
+      <button class="button" type="button" onclick="dislike()">👎</button
+      ><b id="dislike"><%=result[0].dislike%></b>
+      <button class="button" type="button" onclick="wishlist()">❤</button>
     </h1>
 
     <div class="container">
