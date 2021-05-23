@@ -15,7 +15,13 @@
       <a id="main_icon" href="javascript:gotomain()">🏠</a>
 
       <h1>
+        <% if(type === "RESTAURANT"){ %>
+        <span id="category_icon">🍴</span>
+        <% }else if(type ==="CAFE") {%>
         <span id="category_icon">☕</span>
+        <%}else{%>
+        <span id="category_icon">🍺</span>
+        <%}%>
         <span id="category_title"><%=type%></span>
       </h1>
       <!-- <% result.forEach( function(res){ %>
