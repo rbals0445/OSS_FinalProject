@@ -145,7 +145,13 @@
 - TODO :
   - error 해결하기 - 자세한 것은 issue 확인
     - down 버튼 클릭 시 에러
-    - up 버튼 클릭 후 나갔다 오면 다시 클릭 가능함
     - register 에러(이전엔 됐는데...)
   - category.ejs에 category_icon을 하나로 고정할 것인가?
-  
+
+21/05/23 - 한규민
+
+- 수정사항 :
+  - 싫어요 버튼 오류 해결
+  - register 에러 해결
+  - category icon 올바르게 해결
+  - 메인에 '+' 버튼 제거 (구현하기에 시간이 부족)

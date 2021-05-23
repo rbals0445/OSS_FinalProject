@@ -87,7 +87,7 @@ router.post("/process", (req, res, next) => {
         });
       } else {
         //등록 하는 코드 써야함
-        connection.query("insert into user values(?,?,?,?,?,?,?)", [
+        connection.query("insert into user values(?,?,?,?,?,?)", [
           req.body.name,
           req.body.birth,
           req.body.id,
@@ -235,7 +235,7 @@ router.post("/like", (req, res, next) => {
 
 router.post("/dislike", (req, res, next) => {
   connection.query(
-    "select * from where id",
+    "update restaurant set dislike = dislike + 1 where name = ?",
     [req.body.name],
     (error, results) => {
       if (error) console.log(error);
