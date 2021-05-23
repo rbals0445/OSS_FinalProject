@@ -127,3 +127,25 @@
   - 좋아요, 싫어요 기능
 - TODO :
   - DB 값 정리 및 img 저장 필요
+
+21/05/23 - 김민수
+
+- 진행 :
+  - 사진 데이터 수집 및 가공
+  - DB에 음식점 데이터 입력
+  - 테스트하며 에러 찾기, 테스트한 부분
+    - register
+    - login
+    - up/down button
+    - wishlist
+  - 정상작동 확인한 것
+    - login
+    - wishlist
+    - 사진 불러오기
+- TODO :
+  - error 해결하기 - 자세한 것은 issue 확인
+    - down 버튼 클릭 시 에러
+    - up 버튼 클릭 후 나갔다 오면 다시 클릭 가능함
+    - register 에러(이전엔 됐는데...)
+  - category.ejs에 category_icon을 하나로 고정할 것인가?
+  
