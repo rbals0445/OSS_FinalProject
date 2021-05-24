@@ -49,3 +49,6 @@ http://localhost:7777
 
 ## Development History
 [link to history.md](./history.md)
+
+## Meeting Minutes
+[link to meeting.md](./meeting.md)
