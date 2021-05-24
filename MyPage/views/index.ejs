@@ -38,13 +38,13 @@
       <div class="icon_link">
         <!-- 카테고리 이동 아이콘 링크 -->
         <!-- 추후 아이콘 변경할 것 -->
-        <a href="/category">🍽</a>
+        <a href="javascript:mov_category(1)">🍽</a>
         <span>　</span>
-        <a href="/category">☕</a>
+        <a href="javascript:mov_category(2)">☕</a>
         <span>　</span>
-        <a href="/category">🍻</i></a>
+        <a href="javascript:mov_category(3)">🍻</i></a>
         <span>　</span>
-        <a href=""><i class="bi bi-plus"></i></a>
+        <!-- <a href=""><i class="bi bi-plus"></i></a> -->
       </div>
       <p><br /></p>
       <div
@@ -61,7 +61,7 @@
           id="search_input"
           placeholder=""
         />
-        <button type="button" class="btn">SEARCH</button>
+        <button type="button" name="btnsearch" class="btn" onclick="search()">SEARCH</button>
       </div>
     </div>
     <script type="text/javascript" src="./../javascripts/main.js"></script>
