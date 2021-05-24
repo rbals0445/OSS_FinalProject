@@ -7,9 +7,7 @@
   - 4월 22일 (목) 까지 아이디어 생각해오기
   - 시간 여유가 있다면 아마존 앱 배포까지
 - 참고링크
-  - 노마드코더 react 강의
-    
-    https://www.youtube.com/watch?v=sM2p1EqTlw4&list=PL7jH19IHhOLOFTVD4R8FeZWkwpVi8-9Fv&index=2
+  - [노마드코더 react 강의] https://www.youtube.com/watch?v=sM2p1EqTlw4&list=PL7jH19IHhOLOFTVD4R8FeZWkwpVi8-9Fv&index=2
   - 디자인 툴 Figma
     
     https://www.figma.com/
