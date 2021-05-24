@@ -1,5 +1,9 @@
 ## Development History
 
+21/04/18 - 김지수
+![image](https://user-images.githubusercontent.com/63306736/119362632-de6bb500-bce7-11eb-9086-f93023fd3929.png)
+
+
 21/05/07 - 김민수
 
 - TODO : 폰트 및 사이즈, 화면 크기(전체 or 일부) 등
