@@ -12,9 +12,39 @@
 
 
 ## Demo video link
-[link to demo video]()
+[link to demo video](https://youtu.be/3AdWf0bnIYU)
 
 ## How to use
+
+
+
+```
+# For security reasons, the DB file does not exist.
+# So you can not execute some pages ( ex : category, login ..)
+# If you want to see the demonstration, please refer to the demo video.
+
+$ git clone https://github.com/rbals0445/OSS_FinalProject.git
+```
+```
+# install express framework
+$ npm install express --save
+```
+
+```
+# Move to MyPage
+$ cd /Mypage
+```
+
+```
+# Server Start
+$ npm start
+```
+
+```
+In chrome web browser
+http://localhost:7777
+```
+
 
 
 ## Development History
