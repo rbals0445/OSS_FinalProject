@@ -52,3 +52,4 @@ http://localhost:7777
 
 ## Meeting Minutes
 [link to meeting.md](./meeting.md)
+[link to meetingScreenshot](./meetingScreenshot)
