@@ -1,5 +1,5 @@
 ## MainPage
-![MainPage](./MyPage/public/images/category1.PNG)
+![MainPage](./MyPage/public/images/mainpage.PNG)
 
 ## LoginPage
 ![LoginPage](./MyPage/public/images/loginpage.PNG)
