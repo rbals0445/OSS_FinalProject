@@ -14,10 +14,10 @@
 ![SignUpPage](./MyPage/public/images/signuppage.PNG)
 
 ## Mypage
-![Mypage](./MyPage/public/images/Mypage.PNG)
+![Mypage](./MyPage/public/images/mypage.PNG)
 
 ## Category1
-![Category1](./MyPage/public/images/Category1.PNG)
+![Category1](./MyPage/public/images/category1.PNG)
 
 ## Category2
-![Category2](./MyPage/public/images/Category2.PNG)
+![Category2](./MyPage/public/images/category2.PNG)
