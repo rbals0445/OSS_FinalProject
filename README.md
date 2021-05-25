@@ -9,7 +9,7 @@
 | E-mail     | jisu7935@g.skku.edu | rbals0445@naver.com | kms78900@naver.com |
 
 ## Screenshot
-
+[link to screenshot.md](./screenshot.md)
 
 ## Demo video link
 [link to demo video](https://youtu.be/3AdWf0bnIYU)
